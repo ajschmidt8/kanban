@@ -34,7 +34,6 @@ export default function ColumnList({
           maxWidth: '1000px',
           margin: '0 auto',
           display: 'flex',
-          justifyContent: 'space-between',
           flexWrap: 'wrap'
         }}
       >
