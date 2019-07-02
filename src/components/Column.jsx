@@ -56,7 +56,7 @@ export default function Column({
     <div
       style={{
         flex: '30% 0',
-        margin: '0 0 24px',
+        margin: '0px 1% 24px 0',
         padding: '16px',
         boxSizing: 'border-box',
         border: '1px dashed black'
