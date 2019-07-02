@@ -22,6 +22,7 @@ export default function ColumnList({
             e.preventDefault();
             addCardlist(randomId);
             addColumn(textInput.current.value, randomId);
+            textInput.current.value = '';
           }}
         >
           <input ref={textInput} type="text" />
@@ -33,7 +34,8 @@ export default function ColumnList({
           maxWidth: '1000px',
           margin: '0 auto',
           display: 'flex',
-          justifyContent: 'space-between'
+          justifyContent: 'space-between',
+          flexWrap: 'wrap'
         }}
       >
         {columns.map(({ title, cardListId }, columnIndex) => (

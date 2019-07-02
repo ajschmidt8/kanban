@@ -19,6 +19,7 @@ export default function CardList({ list, id, moveCard, addCard }) {
         onSubmit={e => {
           e.preventDefault();
           addCard(id, textInput.current.value);
+          textInput.current.value = '';
         }}
       >
         <input ref={textInput} type="text" />
