@@ -43,15 +43,12 @@ export default function Column({
     }
   });
 
-  const [{ isDragging }, drag] = useDrag({
+  const [, drag] = useDrag({
     item: {
       type: ItemTypes.COLUMN,
       id,
       columnIndex
-    },
-    collect: monitor => ({
-      isDragging: monitor.isDragging()
-    })
+    }
   });
 
   drag(drop(ref));
